@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- title of the web page -->
+<title>Password Generator</title>
+<!-- <link> is used to link stylesheet file -->
+<link rel="stylesheet" href="password.css">
+<!-- jquery file -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- <script> is used to refer to javascript file -->
+<script src="password.js"></script>
+</head>
+<body>
+<main>
+<h1>Generate a strong password</h1>
+<label for="num">Number of characters:</label>
+<!-- handling onKeyPress() event for the textbox -->
+<input type="text" id="num" onKeyPress="return numbersonly(event)"><br>
+<label for="password">Password:</label>
+<!-- textbox for password -->
+<input type="text" id="password" disabled><br>
+<label>&nbsp;</label>
+<!-- button to generate password -->
+<input type="button" id="generate" value="Get Password">
+<!-- button to clear password -->
+<input type="button" id="clear" value="Clear"><br>
+</main>
+</body>
+</html>
